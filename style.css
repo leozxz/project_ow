@@ -1,0 +1,647 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap');
+body{
+    background: #000;
+}
+header{
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+nav{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100px;
+  padding: 10px 100px;
+  box-sizing: border-box;
+  transition: .5s;
+  z-index: 10;
+}
+nav.Black{
+  background: #1a1a1a;
+}
+nav .logo{
+  float: left;
+}
+nav .logo img{
+  height: 80px;
+  transition: .5s;
+}
+nav ul{
+  float: right;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+nav ul li{
+  list-style: none;
+}
+nav ul li a{
+  line-height: 80px;
+  color: #fff;
+  padding: 5px 20px;
+  position: relative;
+  left: 70px;
+  top: 5px;
+  font-family: 'Roboto', sans-serif;
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: .5s;
+}
+nav ul li a.active,
+nav ul li a:hover{
+  color: #000;
+  background: #b3ffff
+}
+section.sec1{
+  width: 100%;
+  height: 100vh;
+  background-size: cover;
+  margin: 0;
+  padding: 0;
+}
+section.sec1 div.shadow{
+  position: absolute;
+  left: 25%;
+  margin: 200px auto 0;
+  width: 700px;
+  height: 350px;
+  background: url(back.png);
+}
+section.sec1 div.shadow:before,
+section.sec1 div.shadow:after{
+  content: '';
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  background: linear-gradient(45deg,#ccffff,#ffffff,#99ccff,#99bbff,#3366ff,#ccffff,#ffffff,#99ccff,#99bbff,#3366ff);
+  background-size: 400%;
+  width: calc(100% + 4px);
+  height: calc(100% + 4px);
+  z-index: -1;
+  animation: animate 20s linear infinite;
+}
+section.sec1 div.shadow:after{
+  filter:blur(10px);
+}
+@keyframes animate{
+  0%{
+    background-position: 0 0;
+  }
+  50%{
+    background-position: 400% 0;
+  }
+  100%{
+    background-position: 0 0;
+  }
+}
+section.sec1 div.shadow h1{
+  margin: 0;
+  padding: 5px;
+  position: relative;
+  top: 10px;
+  left: 37%;
+  color: #ccf2ff;
+  font-family: 'Roboto', sans-serif;
+  font-size: 50px;
+}
+section.sec1 div.shadow p{
+  position: relative;
+  left: 3px;
+  color: #fff;
+  font-family: sans-serif;
+  font-size: 20px;
+}
+section.sec1 div.shadow button{
+  position: relative;
+  left: 43%;
+  font-size: 15px;
+  background-color: #cce6ff;
+  font-family: 'Roboto', sans-serif;
+  border-radius: 15%;
+  color: #000;
+}
+section.sec1 div.circulo{
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: #fff;
+  position: absolute;
+  margin: auto;
+  top: 210px;
+  left: 310px;
+  background-color: #ccf2ff;
+}
+section.sec1 div.circulo:before,
+section.sec1 div.circulo:after{
+  content: '';
+  position: absolute;
+  border-radius: 50%;
+  top: -2px;
+  left: -2px;
+  background: linear-gradient(45deg,#ccffff,#ffffff,#99ccff,#99bbff,#3366ff,#ccffff,#ffffff,#99ccff,#99bbff,#3366ff);
+  background-size: 400%;
+  width: calc(100% + 4px);
+  height: calc(100% + 4px);
+  z-index: -1;
+  animation: animate 20s linear infinite;
+}
+section.sec1 div.circulo:after{
+  filter:blur(10px);
+}
+section.sec1 div.circulo2{
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: #fff;
+  position: absolute;
+  margin: auto;
+  top: 370px;
+  left: 310px;
+  background-color: #ccf2ff;
+}
+  section.sec1 div.circulo2:before,
+  section.sec1 div.circulo2:after{
+    content: '';
+    position: absolute;
+    border-radius: 50%;
+    top: -2px;
+    left: -2px;
+    background: linear-gradient(45deg,#ccffff,#ffffff,#99ccff,#99bbff,#3366ff,#ccffff,#ffffff,#99ccff,#99bbff,#3366ff);
+    background-size: 400%;
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    z-index: -1;
+    animation: animate 20s linear infinite;
+  }
+  section.sec1 div.circulo2:after{
+    filter:blur(10px);
+  }
+section.sec1 div.circulo3{
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: #fff;
+  position: absolute;
+  margin: auto;
+  top: 535px;
+  left: 310px;
+  background-color: #ccf2ff;
+}
+section.sec1 div.circulo3:before,
+section.sec1 div.circulo3:after{
+  content: '';
+  position: absolute;
+  border-radius: 50%;
+  top: -2px;
+  left: -2px;
+  background: linear-gradient(45deg,#ccffff,#ffffff,#99ccff,#99bbff,#3366ff,#ccffff,#ffffff,#99ccff,#99bbff,#3366ff);
+  background-size: 400%;
+  width: calc(100% + 4px);
+  height: calc(100% + 4px);
+  z-index: -1;
+  animation: animate 20s linear infinite;
+}
+section.sec1 div.circulo3:after{
+  filter:blur(10px);
+}
+
+section.sec1 div.circulo4{
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: #fff;
+  position: absolute;
+  margin: auto;
+  top: 210px;
+  left: 1080px;
+  background-color: #ccf2ff;
+}
+section.sec1 div.circulo4:before,
+section.sec1 div.circulo4:after{
+  content: '';
+  position: absolute;
+  border-radius: 50%;
+  top: -2px;
+  left: -2px;
+  background: linear-gradient(45deg,#ccffff,#ffffff,#99ccff,#99bbff,#3366ff,#ccffff,#ffffff,#99ccff,#99bbff,#3366ff);
+  background-size: 400%;
+  width: calc(100% + 4px);
+  height: calc(100% + 4px);
+  z-index: -1;
+  animation: animate 20s linear infinite;
+}
+section.sec1 div.circulo4:after{
+  filter:blur(10px);
+}
+
+section.sec1 div.circulo5{
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: #fff;
+  position: absolute;
+  margin: auto;
+  top: 370px;
+  left: 1080px;
+  background-color: #ccf2ff;
+}
+section.sec1 div.circulo5:before,
+section.sec1 div.circulo5:after{
+  content: '';
+  position: absolute;
+  border-radius: 50%;
+  top: -2px;
+  left: -2px;
+  background: linear-gradient(45deg,#ccffff,#ffffff,#99ccff,#99bbff,#3366ff,#ccffff,#ffffff,#99ccff,#99bbff,#3366ff);
+  background-size: 400%;
+  width: calc(100% + 4px);
+  height: calc(100% + 4px);
+  z-index: -1;
+  animation: animate 20s linear infinite;
+}
+section.sec1 div.circulo5:after{
+  filter:blur(10px);
+}
+
+section.sec1 div.circulo6{
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: #fff;
+  position: absolute;
+  margin: auto;
+  top: 535px;
+  left: 1080px;
+  background-color: #ccf2ff;
+}
+section.sec1 div.circulo6:before,
+section.sec1 div.circulo6:after{
+  content: '';
+  position: absolute;
+  border-radius: 50%;
+  top: -2px;
+  left: -2px;
+  background: linear-gradient(45deg,#ccffff,#ffffff,#99ccff,#99bbff,#3366ff,#ccffff,#ffffff,#99ccff,#99bbff,#3366ff);
+  background-size: 400%;
+  width: calc(100% + 4px);
+  height: calc(100% + 4px);
+  z-index: -1;
+  animation: animate 20s linear infinite;
+}
+section.sec1 div.circulo6:after{
+  filter:blur(10px);
+}
+
+section.sec2 div.txt1 h1{
+  position: absolute;
+  top: 690px;
+  left: 610px;
+  font-family: 'Roboto',sans-serif;
+  font-size: 50px;
+  color: #ccf2ff;
+}
+section.sec2 div.txt1 h2{
+  color: #ccf2ff;
+  position: absolute;
+  top: 830px;
+  left: 200px;
+}
+section.sec2 div.txt1 p{
+  color: #fff;
+  position: absolute;
+  top: 870px;
+  left: 200px;
+}
+section.sec2 div.shadowp1{
+  position: absolute;
+  left: 57%;
+  top: 650px;
+  margin: 200px auto 0;
+  width: 350px;
+  height: 500px;
+  background: url(soft1.png);
+}
+section.sec2 div.shadowp1:before,
+section.sec2 div.shadowp1:after{
+  content: '';
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  background: linear-gradient(45deg,#ccffff,#ffffff,#99ccff,#99bbff,#3366ff,#ccffff,#ffffff,#99ccff,#99bbff,#3366ff);
+  background-size: 400%;
+  width: calc(100% + 4px);
+  height: calc(100% + 4px);
+  z-index: -1;
+  animation: animate 20s linear infinite;
+}
+section.sec2 div.shadowp1:after{
+  filter:blur(10px);
+}
+@keyframes animate{
+  0%{
+    background-position: 0 0;
+  }
+  50%{
+    background-position: 400% 0;
+  }
+  100%{
+    background-position: 0 0;
+  }
+}
+section.sec2 div.txt2 h2{
+  color: #ccf2ff;
+  position: absolute;
+  top: 1430px;
+  left: 57%;
+}
+section.sec2 div.txt2 p{
+  color: #fff;
+  position: absolute;
+  top: 1470px;
+  left: 57%;
+}
+section.sec2 div.shadowp2{
+  position: absolute;
+  left: 200px;
+  top: 1260px;
+  margin: 200px auto 0;
+  width: 350px;
+  height: 500px;
+  background: url(soft2.png);
+}
+section.sec2 div.shadowp2:before,
+section.sec2 div.shadowp2:after{
+  content: '';
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  background: linear-gradient(45deg,#ccffff,#ffffff,#99ccff,#99bbff,#3366ff,#ccffff,#ffffff,#99ccff,#99bbff,#3366ff);
+  background-size: 400%;
+  width: calc(100% + 4px);
+  height: calc(100% + 4px);
+  z-index: -1;
+  animation: animate 20s linear infinite;
+}
+section.sec2 div.shadowp2:after{
+  filter:blur(10px);
+}
+@keyframes animate{
+  0%{
+    background-position: 0 0;
+  }
+  50%{
+    background-position: 400% 0;
+  }
+  100%{
+    background-position: 0 0;
+  }
+}
+section.sec3 h1{
+  position: absolute;
+  top: 2090px;
+  left: 660px;
+  font-family: 'Roboto',sans-serif;
+  font-size: 50px;
+  color: #ccf2ff;
+}
+section.sec3 div.shadowt1{
+  position: absolute;
+  left: 380px;
+  top: 2060px;
+  margin: 200px auto 0;
+  width: 300px;
+  height: 400px;
+  background: url(ft1.png);
+}
+section.sec3 div.shadowt1:before,
+section.sec3 div.shadowt1:after{
+  content: '';
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  background: linear-gradient(45deg,#ccffff,#ffffff,#99ccff,#99bbff,#3366ff,#ccffff,#ffffff,#99ccff,#99bbff,#3366ff);
+  background-size: 400%;
+  width: calc(100% + 4px);
+  height: calc(100% + 4px);
+  z-index: -1;
+  animation: animate 20s linear infinite;
+}
+section.sec3 div.shadowt1:after{
+  filter:blur(10px);
+}
+@keyframes animate{
+  0%{
+    background-position: 0 0;
+  }
+  50%{
+    background-position: 400% 0;
+  }
+  100%{
+    background-position: 0 0;
+  }
+}
+section.sec3 div.shadowt2{
+  position: absolute;
+  left: 780px;
+  top: 2060px;
+  margin: 200px auto 0;
+  width: 300px;
+  height: 400px;
+  background: url(ft2.png);
+}
+section.sec3 div.shadowt2:before,
+section.sec3 div.shadowt2:after{
+  content: '';
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  background: linear-gradient(45deg,#ccffff,#ffffff,#99ccff,#99bbff,#3366ff,#ccffff,#ffffff,#99ccff,#99bbff,#3366ff);
+  background-size: 400%;
+  width: calc(100% + 4px);
+  height: calc(100% + 4px);
+  z-index: -1;
+  animation: animate 20s linear infinite;
+}
+section.sec3 div.shadowt2:after{
+  filter:blur(10px);
+}
+@keyframes animate{
+  0%{
+    background-position: 0 0;
+  }
+  50%{
+    background-position: 400% 0;
+  }
+  100%{
+    background-position: 0 0;
+  }
+}
+section.sec3 div.LeoDev h2{
+  font-family: 'Roboto', sans-serif;
+  font-size: 20px;
+  color: #f0f8ff;
+  position: absolute;
+  top: 2670px;
+  left: 380px;
+}
+section.sec3 div.LeoDev p1{
+  font-family: 'Roboto', sans-serif;
+  font-size: 15px;
+  color: #f0f8ff;
+  position: absolute;
+  top: 2710px;
+  left: 380px;
+}
+section.sec3 div.LeoDev p2 a{
+  font-family: 'Roboto', sans-serif;
+  font-size: 15px;
+  color: #f0f8ff;
+  position: absolute;
+  top: 2729px;
+  left: 380px;
+  text-decoration: none;
+}
+section.sec3 div.LeoDev p3 a{
+  font-family: 'Roboto', sans-serif;
+  font-size: 15px;
+  color: #f0f8ff;
+  position: absolute;
+  top: 2748px;
+  left: 380px;
+  text-decoration: none;
+}
+section.sec3 div.AbnerDev h2{
+  font-family: 'Roboto', sans-serif;
+  font-size: 20px;
+  color: #f0f8ff;
+  position: absolute;
+  top: 2670px;
+  left: 780px;
+}
+section.sec3 div.AbnerDev p1{
+  font-family: 'Roboto', sans-serif;
+  font-size: 15px;
+  color: #f0f8ff;
+  position: absolute;
+  top: 2710px;
+  left: 780px;
+}
+section.sec3 div.AbnerDev p2 a{
+  font-family: 'Roboto', sans-serif;
+  font-size: 15px;
+  color: #f0f8ff;
+  position: absolute;
+  top: 2729px;
+  left: 780px;
+  text-decoration: none;
+}
+section.sec3 div.AbnerDev p3 a{
+  font-family: 'Roboto', sans-serif;
+  font-size: 15px;
+  color: #f0f8ff;
+  position: absolute;
+  top: 2748px;
+  left: 780px;
+  text-decoration: none;
+}
+section.sec4 h1{
+  position: absolute;
+  top: 2890px;
+  left: 630px;
+  font-family: 'Roboto',sans-serif;
+  font-size: 50px;
+  color: #ccf2ff;
+}
+section.sec4 div.midia{
+  position: absolute;
+  top: 3190px;
+  font-size: 50px;
+}
+section.sec4 div.midia div.twitter a{
+  position: absolute;
+  left: 400px;
+  text-decoration: none;
+  color: #ccf2ff;
+}
+section.sec4 div.midia div.twitter:hover a{
+  position: absolute;
+  left: 400px;
+  color: #55acee;
+}
+section.sec4 div.midia div.github a{
+  position: absolute;
+  left: 550px;
+  text-decoration: none;
+  color: #ccf2ff;
+}
+section.sec4 div.midia div.github:hover a{
+  position: absolute;
+  left: 550px;
+  color: #34465d;
+}
+section.sec4 div.midia div.facebook a{
+  position: absolute;
+  left: 700px;
+  text-decoration: none;
+  color: #ccf2ff;
+}
+section.sec4 div.midia div.facebook:hover a{
+  position: absolute;
+  left: 700px;
+  color: #3b5999;
+}
+section.sec4 div.midia div.gmail a{
+  position: absolute;
+  left: 850px;
+  text-decoration: none;
+  color: #ccf2ff;
+}
+section.sec4 div.midia div.gmail:hover a{
+  position: absolute;
+  left: 850px;
+  color: #ffffff;
+}
+section.sec4 div.midia div.instagram a{
+  position: absolute;
+  left: 1000px;
+  text-decoration: none;
+  color: #ccf2ff;
+}
+section.sec4 div.midia div.instagram:hover a{
+  position: absolute;
+  left: 1000px;
+  color: #e4405f;
+}
+section.sec4 div.wave{
+  position: absolute;
+  top: 3500px;
+  left: -100px;
+  right: -200px;
+  bottom: 0;
+}
+section.sec4 div.wave .wave-1{
+  animation: wave1 3s ease-in-out infinite alternate ;
+}
+@keyframes wave1 {
+  from{
+    transform: translateX(-200px);
+  }
+}
+section.sec4 div.wave .wave-2 {
+  animation: wave2 3s 0.3s ease-in-out infinite alternate ;
+}
+@keyframes wave2 {
+  from{
+    transform: translateX(-100px);
+  }
+}
+section.sec4 div.wave .wave-3{
+  animation: wave3 3s 0.7s ease-in-out infinite alternate ;
+}
+@keyframes wave3 {
+  from{
+    transform: translateX(-50px);
+  }
+}
